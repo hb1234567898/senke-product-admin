@@ -1,0 +1,8 @@
+.SideBarLayout {
+    display: flex;
+    flex-direction: column;
+}
+
+.SideBarList {
+
+}

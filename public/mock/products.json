@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "SENKE 400K",
+    "price": 19980,
+    "category": "街车",
+    "available": true
+  },
+  {
+    "id": 2,
+    "name": "SENKE 150SC",
+    "price": 12980,
+    "category": "踏板",
+    "available": true
+  },
+  {
+    "id": 3,
+    "name": "SENKE 250KX",
+    "price": 16800,
+    "category": "街车",
+    "available": true
+  },
+  {
+    "id": 4,
+    "name": "SENKE 150GT",
+    "price": 13800,
+    "category": "踏板",
+    "available": false
+  }
+]

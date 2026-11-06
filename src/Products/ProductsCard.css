@@ -1,0 +1,98 @@
+
+/* 产品列表单行卡片 */
+.products-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 150px 110px;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+    min-width: 0;
+    min-height: 76px;
+}
+
+/* 产品名称 */
+.products-card .products-name {
+    min-width: 0;
+    margin: 0;
+
+    color: #172333;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+
+    overflow-wrap: anywhere;
+}
+
+/* 产品价格 */
+.products-card .products-price {
+    margin: 0;
+
+    color: #172333;
+    font-size: 15px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+/* 库存状态所在区域 */
+.products-status-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* 状态标签 */
+.products-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px 11px;
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* 有库存 */
+.products-status.in-stock {
+    background: #e6f8ed;
+    color: #15803d;
+}
+
+/* 无库存 */
+.products-status.out-of-stock {
+    background: #eef1f5;
+    color: #64748b;
+}
+
+/* 平板适配 */
+@media (max-width: 1024px) {
+    .products-card {
+        grid-template-columns: minmax(0, 1fr) 120px 90px;
+        gap: 12px;
+    }
+}
+
+/* 手机适配 */
+@media (max-width: 600px) {
+    .products-card {
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 10px;
+        min-height: auto;
+    }
+
+    .products-card .products-name {
+        font-size: 14px;
+    }
+
+    .products-card .products-price {
+        font-size: 14px;
+        text-align: right;
+    }
+
+    .products-status-wrap {
+        grid-column: 1 / -1;
+    }
+}
